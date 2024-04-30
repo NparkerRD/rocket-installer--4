@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+ // CUSTOM COLORS
+ $cc-primary-66: #9f81cf;
+ $cc-primary: #b45ec2;
+ $cc-primary-46: #6940aa;
+ 
+ $cc-xlt: #f9f8fc;
+ $cc-lt: #ddd3ee;
+ $cc-dk: #170e25;
+ $cc-xdk: #2d1c4a;
+
+ $cc-shadow: rgba(0,0,0,0.25);
+
+ // NOTIFICATION COLORS
+ $cc-error: #ff3333;
+ $cc-success: #66ff66;
+ $cc-warning: #e1e500;
+ $cc-neutral: #cccccc;
+
+
+ // FONT STYLES
+ $ff-main: "Inria Sans", sans-serif;
+
+ $fw-lt: 300;
+ $fw-reg: 400;
+ $fw-bold: 700;
+
+// Reset defaults
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $ff-main;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+// Flex mixins
+@mixin flexClass {
+    display: flex;
+}
+
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Flex classes
+.flex {
+    @include flexClass;
+}
+
+.flex-col {
+    @include flexCol;
+}
+
+.flex-center {
+    @include flexCenter;
+}

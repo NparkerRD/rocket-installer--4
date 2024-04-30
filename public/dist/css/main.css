@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.25rem 0.625rem;
+  border: none;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.btn--primary {
+  background: #b45ec2;
+  color: #f9f8fc;
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+}
+.nav-btn .burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 5px;
+  background: #2d1c4a;
+  border-radius: 150px;
+}
+.nav-btn .burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 5px;
+  background-color: #2d1c4a;
+  border-radius: 150px;
+}
+.nav-btn .burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 5px;
+  background-color: #2d1c4a;
+  border-radius: 150px;
+}
+.nav-btn .burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.nav-btn .burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.nav-btn .burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: clamp(21rem, 85%, 23rem);
+  height: 100vh;
+  padding: 2.5rem 1rem;
+  background: #f9f8fc;
+  visibility: hidden;
+  opacity: 0;
+}
+.nav.open {
+  visibility: visible;
+  opacity: 1;
+}
+.nav__brand {
+  width: 100%;
+  padding: 0.625rem 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.nav__logo {
+  width: 3.125rem;
+  height: 4.6785rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  background: black;
+}
+.nav__menu {
+  margin-left: 2.5rem;
+}
+.nav__item, .nav__subitem {
+  display: flex;
+  margin-bottom: 0.625rem;
+  align-items: center;
+}
+.nav .submenu-container {
+  position: relative;
+}
+.nav__submenu {
+  position: absolute;
+  top: 1.8rem;
+  left: 2rem;
+  width: 100%;
+}
+.nav-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.nav__buttons {
+  width: 100%;
+  margin: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay.open {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */

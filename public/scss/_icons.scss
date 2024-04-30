@@ -1,0 +1,60 @@
+.nav-btn {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    right: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    
+  
+    .burger {
+      // middle bar
+      position: absolute;
+      right: 0;
+      top: 0.5rem;
+      width: 28px;
+      height: 5px;
+      background: $cc-xdk;
+      border-radius: 150px;
+      
+  
+      &::before {
+        // top bar
+        content: "";
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 5px;
+        background-color: $cc-xdk;
+        border-radius: 150px;
+      }
+  
+      &::after {
+        // bottom bar
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 5px;
+        background-color: $cc-xdk;
+        border-radius: 150px;
+      }
+  
+      &.open {
+        transform: rotate(720deg);
+        background: transparent;
+  
+        &::before {
+          // top bar
+          transform: rotate(45deg) translate(5px, 8px);
+        }
+  
+        &::after {
+          // bottom bar
+          width: 28px;
+          transform: rotate(-45deg) translate(3px, -7px);
+        }
+      }
+    }
+  }
