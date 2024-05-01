@@ -1,6 +1,9 @@
-class ClientView {
-    _generateMarkup() {
-        return `
+import View from "./View.js";
+
+class ClientsView extends View {
+  // mimics "results view"
+  _generateMarkup() {
+    return `
         <div class="card card--client">
             <div class="card__img client-logo"></div>
             <div class="card__content">
@@ -13,6 +16,6 @@ class ClientView {
                 </ul>
             </div>
         </div>
-        `
-    }
+        `;
+  }
 }
