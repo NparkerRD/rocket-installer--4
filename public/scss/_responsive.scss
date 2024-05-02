@@ -1,0 +1,38 @@
+@include media-md {
+  .main {
+    &__action-buttons {
+      padding-right: 3rem;
+    }
+  }
+}
+
+@include media-lg {
+  // 1) Hide the menu button
+  .nav-btn {
+    visibility: hidden;
+  }
+
+  // 2) Display the navigation pane on the left side
+  .nav {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  body {
+    display: flex;
+  }
+
+  .cards {
+    margin-left: 9.4rem;
+    align-items: revert;
+    justify-content: revert;
+    padding: 1rem 1.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 1rem 0.5rem;
+  }
+}

@@ -49,6 +49,16 @@ ul {
   background: #b45ec2;
   color: #f9f8fc;
 }
+.btn--add-new {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
 
 .nav-btn {
   position: absolute;
@@ -153,11 +163,21 @@ ul {
   margin: auto;
 }
 
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .card {
   display: flex;
   align-items: center;
   width: clamp(21.5rem, 90%, 22rem);
   min-height: 9.56rem;
+  height: -moz-max-content;
   height: max-content;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -191,12 +211,48 @@ ul {
   opacity: 1;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main {
   width: 100%;
   flex-direction: column;
-  margin-top: 5rem;
-  padding-top: 3rem;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  border: 1px dashed;
+}
+.main__action-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main__action-buttons {
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .nav {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+  }
+  body {
+    display: flex;
+  }
+  .cards {
+    margin-left: 9.4rem;
+    align-items: revert;
+    justify-content: revert;
+    padding: 1rem 1.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 1rem 0.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>View Template</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css" />
     <script defer src="../js/nav.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="overlay"></div>
     <div class="nav-btn">
-        <span class="burger"></span>
+      <span class="burger"></span>
     </div>
     <nav class="nav flex-col">
-        <div class="nav__brand flex">
-            <div class="nav__logo"></div>
-            <h1 class="nav__title">Rocket Installer</h1>
-        </div>
-        <ul class="nav__menu">
-            <li class="nav__item">
-                <img src="../assets/icon--people-16px.png" alt="/" class="nav-icon">
-                Clients
+      <div class="nav__brand flex">
+        <div class="nav__logo"></div>
+        <h1 class="nav__title">Rocket Installer</h1>
+      </div>
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <img src="../assets/icon--people-16px.png" alt="/" class="nav-icon" />
+          Clients
+        </li>
+        <li class="nav__item submenu-container">
+          <img src="../assets/icon--tools-16px.png" alt="/" class="nav-icon" />
+          Tools
+          <ul class="nav__submenu">
+            <li class="nav__subitem">
+              <img
+                src="../assets/icon--calculator-16px.png"
+                alt="/"
+                class="nav-icon"
+              />
+              Calculators
             </li>
-            <li class="nav__item submenu-container">
-                <img src="../assets/icon--tools-16px.png" alt="/" class="nav-icon">
-                Tools
-                <ul class="nav__submenu">
-                    <li class="nav__subitem">
-                        <img src="../assets/icon--calculator-16px.png" alt="/" class="nav-icon">
-                        Calculators
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <div class="nav__buttons flex-center">
-            <button class="btn btn--primary btn--sign-in">Sign In</button>
-        </div>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav__buttons flex-center">
+        <button class="btn btn--primary btn--sign-in">Sign In</button>
+      </div>
     </nav>
-    <main class="cards flex-col">
+    <main class="main flex-col">
+      <div class="main__action-buttons">
+        <button class="btn btn--add-new">
+          <img
+            src="../assets/icon--plus-16px.png"
+            alt="Add new"
+            class="btn-icon"
+          />
+        </button>
+      </div>
+      <section class="cards flex-col">
         <div class="card">
-            <div class="card__img"></div>
-            <div class="card__content">
-                <h1 class="card__title">Card Title</h1>
-                <ul class="card__items">
-                    <li class="card__item">
-                        <div class="item-icon"></div>
-                        <span class="item-count">#</span> Card Item
-                    </li>
-                </ul>
-            </div>
+          <div class="card__img"></div>
+          <div class="card__content">
+            <h1 class="card__title">Card Title</h1>
+            <ul class="card__items">
+              <li class="card__item">
+                <div class="item-icon"></div>
+                <span class="item-count">#</span> Card Item
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__content">
+            <h1 class="card__title">Card Title</h1>
+            <ul class="card__items">
+              <li class="card__item">
+                <div class="item-icon"></div>
+                <span class="item-count">#</span> Card Item
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__content">
+            <h1 class="card__title">Card Title</h1>
+            <ul class="card__items">
+              <li class="card__item">
+                <div class="item-icon"></div>
+                <span class="item-count">#</span> Card Item
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
